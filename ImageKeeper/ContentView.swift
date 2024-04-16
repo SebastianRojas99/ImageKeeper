@@ -18,12 +18,15 @@ struct ContentView: View {
         NavigationStack{
             VStack{
                 if image.isEmpty{
-                    ContentUnavailableView("Nada para mostrar",systemImage: "photo")
+                    ContentUnavailableView("Nada para mostrar...",systemImage: "photo")
                 }else{
-                    //
+                    ForEach(image){ item in
+                        CardPhotoView(item: item )
+                    }
+                    
                 }
             }.padding(.all)
-                .navigationTitle("image data ")
+                .navigationTitle("Images Data")
                 .toolbar{
                     ToolbarItem{
                         Button{
