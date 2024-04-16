@@ -30,10 +30,14 @@ struct ContentView: View {
                             }label: {
                                 Image(systemName: "trash")
                             }
-                        }
-                    }
-                    
+                        }.listRowSeparator(.hidden)
+                            .listRowBackground(Color.clear)
+                    }.shadow(color: Color.black, radius: 4, x: 3, y:3)
+                        .listStyle(.plain)
+                        .scrollContentBackground(.hidden)
+                        .background(Color.white)
                 }
+                    
             }.padding(.all)
                 .navigationTitle("Images Data")
                 .toolbar{
