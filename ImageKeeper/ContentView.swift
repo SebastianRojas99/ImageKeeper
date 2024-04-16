@@ -20,8 +20,17 @@ struct ContentView: View {
                 if image.isEmpty{
                     ContentUnavailableView("Nada para mostrar...",systemImage: "photo")
                 }else{
-                    ForEach(image){ item in
-                        CardPhotoView(item: item )
+                    List{
+                        ForEach(image){ item in
+                            CardPhotoView(item: item )
+                            Button(role:.destructive){
+                                withAnimation{
+                                    context.delete(item)
+                                }
+                            }label: {
+                                Image(systemName: "trash")
+                            }
+                        }
                     }
                     
                 }
