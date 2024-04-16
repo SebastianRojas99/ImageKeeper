@@ -11,6 +11,7 @@
 		960010362BCE1AF90046C858 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960010352BCE1AF90046C858 /* ContentView.swift */; };
 		960010382BCE1AFB0046C858 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960010372BCE1AFB0046C858 /* Assets.xcassets */; };
 		9600103B2BCE1AFB0046C858 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9600103A2BCE1AFB0046C858 /* Preview Assets.xcassets */; };
+		963DE5BF2BCE1F7C0037B945 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963DE5BE2BCE1F7C0037B945 /* PhotoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		960010352BCE1AF90046C858 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		960010372BCE1AFB0046C858 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9600103A2BCE1AFB0046C858 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		963DE5BE2BCE1F7C0037B945 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				960010352BCE1AF90046C858 /* ContentView.swift */,
 				960010372BCE1AFB0046C858 /* Assets.xcassets */,
 				960010392BCE1AFB0046C858 /* Preview Content */,
+				963DE5BE2BCE1F7C0037B945 /* PhotoModel.swift */,
 			);
 			path = ImageKeeper;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				963DE5BF2BCE1F7C0037B945 /* PhotoModel.swift in Sources */,
 				960010362BCE1AF90046C858 /* ContentView.swift in Sources */,
 				960010342BCE1AF90046C858 /* ImageKeeperApp.swift in Sources */,
 			);

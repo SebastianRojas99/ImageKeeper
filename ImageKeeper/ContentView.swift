@@ -6,19 +6,37 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
+    
+    @Environment(\.modelContext) private var context
+    @Query private var image:[PhotoModel]
+    @State var show = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, keeper!")
+        NavigationStack{
+            VStack{
+                if image.isEmpty{
+                    ContentUnavailableView("Nada para mostrar",systemImage: "photo")
+                }else{
+                    //
+                }
+            }.padding(.all)
+                .navigationTitle("image data ")
+                .toolbar{
+                    ToolbarItem{
+                        Button{
+                            show.toggle()
+                        }label: {
+                            Image(systemName: "plus")
+                        }
+                    }
+                }
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView().modelContainer(for:PhotoModel.self, inMemory: true)
 }

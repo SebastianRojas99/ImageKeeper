@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct ImageKeeperApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().modelContainer(for: PhotoModel.self)
         }
     }
 }
