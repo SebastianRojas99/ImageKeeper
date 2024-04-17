@@ -48,7 +48,12 @@ struct ContentView: View {
                             Image(systemName: "plus")
                         }
                     }
+                }.sheet(isPresented: $show){
+                    NavigationStack{
+                        AddImageView()
+                    }
                 }
+                
         }
     }
 }
